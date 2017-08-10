@@ -18,7 +18,7 @@ router.get('/', function(req, res, next) {
     ]
   };
 
-  res.json(data.cars);
+  res.json(data);
 });
 
 module.exports = router;
