@@ -17,8 +17,7 @@ class App extends Component {
     fetch(uri)
       .then((response) => response.json())
       .then((responseJson) => {
-        this.setState({cars: responseJson}, function() {
-        });
+        this.setState({cars: responseJson.cars});
       })
       .catch((error) => {
         console.error(error);
